@@ -1,0 +1,51 @@
+.tabs {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    border-bottom: 2px solid var(--color2);
+    margin-bottom: 20px;
+    margin-top: 128px;
+}
+
+.tab-button {
+    padding: 3px 29px;
+    cursor: pointer;
+    border: none;
+    background: none;
+    color: white;
+    font-size: 26px;
+    border-bottom: 3px solid transparent;
+    transition: all 0.3s ease;
+    font-family: var(--font-text);
+}
+
+.tab-button:hover {
+    color: var(--color1);
+}
+
+.tab-button.active {
+    border-bottom: 3px solid var(--color1);
+    font-weight: bold;
+}
+
+.tab-content {
+    display: none;
+    animation: fade 0.3s ease-in-out;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+@keyframes fade {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+

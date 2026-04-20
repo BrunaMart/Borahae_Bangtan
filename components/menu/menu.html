@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <link rel="stylesheet" href="/styles/global.css">
+
+</head>
+
+<body>
+    <header class="header">
+
+        <img class="logo" src="/assets/img/BTS-Logo.png" alt="BTS Logo" width="120">
+        <h2>Borahae Bangtan</h2>
+
+        <nav class="nav">
+            <button class="hamburger"></button>
+
+            <ul class="nav-list">
+                <li><a href="/Home.html">Home</a></li>
+                <li><a href="/pages/about.html">About BTS</a></li>
+                <li><a href="/pages/members.html">Members</a></li>
+                <li><a href="/pages/albuns.html">Albums</a></li>
+                <li><a href="/pages/army.html">ARMY Community</a></li>
+
+            </ul>
+        </nav>
+    </header>
+
+
+    <style>
+        header {
+            overflow: visible;
+            position: relative;
+            height: 9vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background: rgba(113, 7, 145, 0.105);
+            backdrop-filter: blur(7px);
+            padding: 11px;
+        }
+
+        h2 {
+            position: relative;
+            top: -53%;
+            left: -26rem;
+            font-family: var(--font-title);
+            font-size: 2rem;
+            color: var(--color1);
+            text-shadow: 0 0 16px rgba(213, 149, 255, 0.644), 0 0 8px rgba(224, 167, 252, 0.374);
+            z-index: 1;
+            letter-spacing: 0.2rem;
+        }
+
+        button {
+            font-family: var(--font-text);
+            font-size: 1rem;
+            color: white;
+            font: bold;
+            background: none;
+            border: none;
+            cursor: pointer;
+        }
+
+        .logo {
+            position: relative;
+            display: flex;
+            top: 32%;
+            left: -32%;
+            width: 7%;
+            height: 88%;
+            z-index: 2;
+            filter: invert(39%) sepia(99%) saturate(663%) hue-rotate(226deg);
+        }
+
+        .nav {
+            position: absolute;
+            margin-top: 0%;
+            display: flex;
+            justify-content: flex-end;
+            width: 60%;
+            padding-right: 30px;
+
+        }
+
+        .nav-list {
+            display: flex;
+            gap: 32px;
+            list-style: none;
+            z-index: 2;
+        }
+
+        .nav-list a {
+            color: white;
+            font-family: var(--font-text);
+            margin: 0 13px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 132%;
+            position: relative;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: var(--color1);
+        }
+
+        nav a::after {
+            content: '';
+            position: absolute;
+            bottom: -4px;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background: linear-gradient(to right, var(--color2), var(--color3), var(--color4));
+            opacity: 0;
+            transform: scaleX(0);
+            transform-origin: center;
+            transition: opacity 0.3s ease, transform 0.3s ease;
+        }
+
+        nav a:hover::after {
+            opacity: 1;
+            transform: scaleX(1);
+        }
+
+        .hamburger {
+            display: none;
+            border: none;
+            background: none;
+            border-top: 3px solid #fff;
+            cursor: pointer;
+        }
+
+        .hamburger::after,
+        .hamburger::before {
+            content: " ";
+            display: block;
+            width: 30px;
+            height: 3px;
+            background: #fff;
+            margin-top: 5px;
+            position: relative;
+            transition: 0.3s;
+        }
+    </style>
+
+
+    <script src="/components/menu/menu.js" defer></script>
+</body>
+
+</html>

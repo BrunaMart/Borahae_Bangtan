@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Members</title>
+    <link rel="icon" type="image/svg+xml" href="/assets/bts_logo.svg">
+    <link rel="stylesheet" href="/styles/global.css">
+    <link rel="stylesheet" href="/styles/members.css">
+</head>
+
+<body>
+    <div id="bg"></div>
+    <div id="menu"></div>
+
+
+
+    <h1 class="heading-h1">BTS Members</h1>
+    <div class="tabs">
+        <button class="tab-button active" onclick="showTab('rm')">RM</button>
+        <button class="tab-button" onclick="showTab('sugar')">Sugar</button>
+        <button class="tab-button" onclick="showTab('hopi')">J-hope</button>
+        <button class="tab-button" onclick="showTab('jin')">Jin</button>
+        <button class="tab-button" onclick="showTab('jk')">JungKook</button>
+        <button class="tab-button" onclick="showTab('v')">V</button>
+        <button class="tab-button" onclick="showTab('jimin')">Jimin</button>
+    </div>
+
+    <div id="rm" class="tab-content active">
+        <div class="about-content">
+
+
+        </div>
+        <div class="about-img">
+            <img src="#" alt="">
+        </div>
+    </div>
+    </div>
+
+    <div id="sugar" class="tab-content">
+        <h2 class="title">
+            </h1>
+
+            <div class="training-list ">
+
+            </div>
+    </div>
+
+    <div id="hopi" class="tab-content">
+        <h2 class="title">
+            </h1>
+            <div class="work-list">
+
+            </div>
+    </div>
+
+
+    <div id="jin" class="tab-content">
+        <h2 class="title">
+            </h1>
+            <div class="work-list">
+
+            </div>
+    </div>
+
+
+    <div id="jk" class="tab-content">
+        <h2 class="title">
+            </h1>
+            <div class="work-list">
+
+            </div>
+    </div>
+
+
+    <div id="v" class="tab-content">
+        <h2 class="title">
+            </h1>
+            <div class="work-list">
+
+            </div>
+    </div>
+
+     <div id="jimin" class="tab-content">
+        <h2 class="title">
+            </h1>
+            <div class="work-list">
+
+            </div>
+    </div>
+
+    <script>
+        function showTab(tabId) {
+            const contents = document.querySelectorAll('.tab-content');
+            const buttons = document.querySelectorAll('.tab-button');
+
+            contents.forEach(c => c.classList.remove('active'));
+            buttons.forEach(b => b.classList.remove('active'));
+
+            document.getElementById(tabId).classList.add('active');
+
+            const activeButton = document.querySelector(`[onclick="showTab('${tabId}')"]`);
+            if (activeButton) activeButton.classList.add('active');
+        }
+    </script>
+
+    <div id="footer"></div>
+    <script src="/components/footer/footer.js" defer></script>
+    <script src="/components/bg/bg.js" defer></script>
+    <script src="/components/menu/menu.js" defer></script>
+</body>
+
+</html>
