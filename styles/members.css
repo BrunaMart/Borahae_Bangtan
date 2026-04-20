@@ -1,3 +1,132 @@
+.about-content{
+    position: relative;
+    margin-bottom: 4rem;
+}
+
+.title-content {
+    position: relative;
+    left: 0rem;
+    font-family: var(--font-text);
+    color: var(--color1);
+    text-shadow: 0 0 16px rgb(213, 149, 255), 0 0 8px rgb(224, 167, 252);
+    font-size: 4rem;
+}
+
+.text-content p {
+    position: relative;
+    font-family: var(--font-text);
+    margin-top: 0rem;
+    font-size: 22px;
+    text-align: left;
+    top: 1rem;
+    z-index: 3;
+}
+
+.bt21-p {
+    position: relative;
+    font-family: var(--font-text);
+    margin-top: 0rem;
+    font-size: 22px;
+    text-align: left;
+    top: 4rem;
+    z-index: 3;
+}
+
+.bt21-ol {
+    font-size: 22px;
+    font-family: var(--font-text);
+    position: relative;
+    list-style: none;
+    margin: 1%;
+    left: 0rem;
+    text-align: left;
+    top: 2rem;
+}
+
+.bt21-ol li::before {
+    content: "✦ ";
+    color: var(--color1);
+}
+
+.bt21-img {
+    position: relative;
+    top: -41rem;
+    left: 50rem;
+}
+
+.bt21-img img {
+    width: 55rem;
+    height: 39rem;
+    transition: 0.4s ease-in-out;
+}
+
+.bt21-img img:hover {
+    transform: scale(1.1);
+    filter:
+        drop-shadow(0 5px 10px rgba(136, 63, 185, 0.747)) drop-shadow(0 0 5px rgba(64, 5, 112, 0.582));
+
+}
+
+/*MEMBERS*/
+.members-ol {
+    font-size: 22px;
+    font-family: var(--font-text);
+    position: relative;
+    list-style: none;
+    margin: 26%;
+    left: -26rem;
+    text-align: left;
+    top: -23rem;
+}
+
+.members-ol li::before {
+    content: "✦ ";
+    color: var(--color1);
+}
+
+.menbers-img {
+    position: relative;
+    top: -73rem;
+    left: 61rem;
+}
+
+.menbers-img img {
+    width: 27rem;
+    height: 34rem;
+    transition: 0.4s ease-in-out;
+}
+
+/*.menbers-img img:hover {
+    transform: scale(1.1);
+    filter: brightness(1.1);
+    box-shadow: 0 15px 40px var(--color4);
+
+}
+
+.menber-bt21 img:hover {
+    transform: scale(1.1);
+    filter:
+        drop-shadow(0 5px 10px rgba(136, 63, 185, 0.747)) drop-shadow(0 0 5px rgba(64, 5, 112, 0.582));
+}*/
+
+.menber-bt21 {
+    position: relative;
+    top: -104rem;
+    left: 84rem;
+    z-index: -1;
+}
+
+.menber-bt21 img {
+    width: 21rem;
+    height: 22rem;
+    /*transition: 0.4s ease-in-out;*/
+}
+
+
+
+
+
+
 .tabs {
     position: relative;
     display: flex;
@@ -13,7 +142,7 @@
     border: none;
     background: none;
     color: white;
-    font-size: 26px;
+    font-size: 2rem;
     border-bottom: 3px solid transparent;
     transition: all 0.3s ease;
     font-family: var(--font-text);
@@ -48,4 +177,3 @@
         transform: translateY(0);
     }
 }
-

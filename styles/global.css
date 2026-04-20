@@ -29,8 +29,11 @@ body {
 }
 
 section {
-  min-height: 100vh;
-  padding: 6rem 2% 0rem;
+  width: 80%;
+  margin: 50px auto;
+  min-height: 83vh;
+  padding: 4rem 0% 1rem;
+  color: white;
 }
 
 a {
@@ -40,16 +43,20 @@ a {
 }
 
 span {
-  color: var(--color2);
+  color: var(--color1);
+  text-shadow: 0 0 16px rgb(213, 149, 255), 0 0 8px rgb(224, 167, 252);
   font-weight: 600;
+  font-family: var(--font-text);
 }
 
 .heading-h1 {
   position: relative;
+  text-align: center;
   font-weight: 400;
   font-style: normal;
   font-variation-settings: "XROT" 0, "YROT" 0;
   font-family: var(--font-title);
+  font-size: 6rem;
   color: var(--color1);
   text-shadow: 0 0 16px rgb(213, 149, 255), 0 0 8px rgb(224, 167, 252);
   letter-spacing: 0.3rem;
@@ -122,7 +129,7 @@ footer {
     justify-content: space-evenly;
     align-items: center;
     gap: 0;
-    pointer-events: none;
+    /*pointer-events: none;*/
     z-index: 2;
 
   }
