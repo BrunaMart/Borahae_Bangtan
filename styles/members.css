@@ -1,132 +1,3 @@
-.about-content{
-    position: relative;
-    margin-bottom: 4rem;
-}
-
-.title-content {
-    position: relative;
-    left: 0rem;
-    font-family: var(--font-text);
-    color: var(--color1);
-    text-shadow: 0 0 16px rgb(213, 149, 255), 0 0 8px rgb(224, 167, 252);
-    font-size: 4rem;
-}
-
-.text-content p {
-    position: relative;
-    font-family: var(--font-text);
-    margin-top: 0rem;
-    font-size: 22px;
-    text-align: left;
-    top: 1rem;
-    z-index: 3;
-}
-
-.bt21-p {
-    position: relative;
-    font-family: var(--font-text);
-    margin-top: 0rem;
-    font-size: 22px;
-    text-align: left;
-    top: 4rem;
-    z-index: 3;
-}
-
-.bt21-ol {
-    font-size: 22px;
-    font-family: var(--font-text);
-    position: relative;
-    list-style: none;
-    margin: 1%;
-    left: 0rem;
-    text-align: left;
-    top: 2rem;
-}
-
-.bt21-ol li::before {
-    content: "✦ ";
-    color: var(--color1);
-}
-
-.bt21-img {
-    position: relative;
-    top: -41rem;
-    left: 50rem;
-}
-
-.bt21-img img {
-    width: 55rem;
-    height: 39rem;
-    transition: 0.4s ease-in-out;
-}
-
-.bt21-img img:hover {
-    transform: scale(1.1);
-    filter:
-        drop-shadow(0 5px 10px rgba(136, 63, 185, 0.747)) drop-shadow(0 0 5px rgba(64, 5, 112, 0.582));
-
-}
-
-/*MEMBERS*/
-.members-ol {
-    font-size: 22px;
-    font-family: var(--font-text);
-    position: relative;
-    list-style: none;
-    margin: 26%;
-    left: -26rem;
-    text-align: left;
-    top: -23rem;
-}
-
-.members-ol li::before {
-    content: "✦ ";
-    color: var(--color1);
-}
-
-.menbers-img {
-    position: relative;
-    top: -73rem;
-    left: 61rem;
-}
-
-.menbers-img img {
-    width: 27rem;
-    height: 34rem;
-    transition: 0.4s ease-in-out;
-}
-
-/*.menbers-img img:hover {
-    transform: scale(1.1);
-    filter: brightness(1.1);
-    box-shadow: 0 15px 40px var(--color4);
-
-}
-
-.menber-bt21 img:hover {
-    transform: scale(1.1);
-    filter:
-        drop-shadow(0 5px 10px rgba(136, 63, 185, 0.747)) drop-shadow(0 0 5px rgba(64, 5, 112, 0.582));
-}*/
-
-.menber-bt21 {
-    position: relative;
-    top: -104rem;
-    left: 84rem;
-    z-index: -1;
-}
-
-.menber-bt21 img {
-    width: 21rem;
-    height: 22rem;
-    /*transition: 0.4s ease-in-out;*/
-}
-
-
-
-
-
-
 .tabs {
     position: relative;
     display: flex;
@@ -176,4 +47,263 @@
         opacity: 1;
         transform: translateY(0);
     }
+}
+
+
+.members-content {
+    position: relative;
+    margin-top: 2rem;
+}
+
+.title-content {
+    font-family: var(--font-title);
+    font-size: 5rem;
+    color: var(--color1);
+    text-shadow: 0 0 16px rgb(213, 149, 255), 0 0 8px rgb(224, 167, 252);
+    letter-spacing: 0.3rem;
+    font-variation-settings: "XROT" 0, "YROT" 0;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.text-content {
+    font-family: var(--font-text);
+    font-size: 1.38rem;
+}
+
+/* BT21 */
+.bt21-ol {
+    font-size: 1.38rem;
+    position: relative;
+    list-style: none;
+    margin: 3%;
+    text-align: left;
+    left: -2rem;
+    top: -1rem;
+}
+
+.bt21-ol li::before {
+    content: "✦ ";
+    color: var(--color1);
+}
+
+.bt21-p {
+    font-family: var(--font-text);
+    font-size: 1.29rem;
+}
+
+.bt21-img {
+    position: relative;
+    top: -41rem;
+    left: 50rem;
+}
+
+.bt21-img img {
+    width: 50rem;
+    height: 32rem;
+    transition: 0.4s ease-in-out;
+}
+
+.bt21-img img:hover {
+    transform: scale(1.1);
+    filter:
+        drop-shadow(0 5px 10px rgba(136, 63, 185, 0.747)) drop-shadow(0 0 5px rgba(64, 5, 112, 0.582));
+}
+
+/* MEMBERS */
+
+.members-ol {
+    position: relative;
+    font-family: var(--font-text);
+    font-size: 22px;
+    font-size: 1.38rem;
+    list-style: none;
+    margin: 26%;
+    text-align: left;
+    left: -26rem;
+    top: -23rem;
+}
+
+.members-ol li::before {
+    content: "✦ ";
+    color: var(--color1);
+}
+
+
+/* RM */
+.members-bt21 {
+    position: relative;
+    top: -69rem;
+    left: 84rem;
+    transform: rotate(3deg);
+    z-index: 1;
+}
+
+.members-bt21 img {
+    width: 21rem;
+    height: 22rem;
+}
+
+
+.menbers-img {
+    position: relative;
+    top: -97rem;
+    left: 61rem;
+}
+
+.menbers-img img {
+    width: 27rem;
+    height: 34rem;
+    border-radius: 11%;
+}
+
+/* SUGA */
+.menbers-suga {
+    position: relative;
+    top: -94rem;
+    left: 61rem;
+}
+
+.menbers-suga img {
+    width: 25rem;
+    height: 34rem;
+    border-radius: 11%;
+}
+
+.shooky-bt21 {
+    position: relative;
+    top: -69rem;
+    left: 78rem;
+    transform: rotate(3deg);
+    z-index: 1;
+}
+
+.shooky-bt21 img {
+    width: 21rem;
+    height: 22rem;
+}
+
+/* hopi */
+.menbers-hopi {
+    position: relative;
+    top: -96rem;
+    left: 61rem;
+}
+
+.menbers-hopi img {
+    width: 27rem;
+    height: 34rem;
+    border-radius: 11%;
+}
+
+.mang-bt21 {
+    position: relative;
+    top: -69rem;
+    left: 1315px;
+    z-index: 2;
+}
+
+.mang-bt21 img {
+    width: 20rem;
+    height: 22rem;
+}
+
+/* JIN */
+.menbers-jin {
+    position: relative;
+    top: -94rem;
+    left: 61rem;
+}
+
+.menbers-jin img {
+    width: 25rem;
+    height: 34rem;
+    border-radius: 11%;
+}
+
+.rj-bt21 {
+    position: relative;
+    top: -62rem;
+    left: 1304px;
+    z-index: 2;
+}
+
+.rj-bt21 img {
+    width: 21rem;
+    height: 22rem;
+}
+
+/* jk */
+.menbers-jk {
+    position: relative;
+    top: -100rem;
+    left: 61rem;
+}
+
+.menbers-jk img {
+    width: 23rem;
+    height: 34rem;
+    border-radius: 11%;
+}
+
+.cooky-bt21 {
+    position: relative;
+    top: -65rem;
+    left: 1345px;
+    z-index: 2;
+}
+
+.cooky-bt21 img {
+    width: 21rem;
+    height: 30rem;
+}
+
+/* V */
+.menbers-v {
+    position: relative;
+    top: -100rem;
+    left: 61rem;
+}
+
+.menbers-v img {
+    width: 25rem;
+    height: 34rem;
+    border-radius: 11%;
+}
+
+.tata-bt21 {
+    position: relative;
+    top: -65rem;
+    left: 1315px;
+    z-index: 2;
+}
+
+.tata-bt21 img {
+    width: 21rem;
+    height: 30rem;
+}
+
+/* JIMIN */
+.menbers-jimin {
+    position: relative;
+    top: -101rem;
+    left: 61rem;
+}
+
+.menbers-jimin img {
+    width: 20rem;
+    height: 34rem;
+    border-radius: 11%;
+}
+
+.chimmy-bt21 {
+    position: relative;
+    top: -65rem;
+    left: 1216px;
+    z-index: 2;
+}
+
+.chimmy-bt21 img {
+    width: 21rem;
+    height: 30rem;
 }

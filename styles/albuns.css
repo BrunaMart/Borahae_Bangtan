@@ -19,6 +19,7 @@
     margin: auto;
     display: flex;
     flex-wrap: wrap;
+    top: 5rem;
     position: relative;
 }
 
@@ -211,4 +212,49 @@
         opacity: 1;
         transform: translateY(0);
     }
+}
+
+/* ALBUNS HISTORY*/
+.history-albuns{
+    position: relative;
+    margin-top: 4rem;
+    text-align: center;
+}
+
+table {
+    font-family: var(--font-text);
+    border-collapse: separate;
+    border-spacing: 0;
+    width: 80%;
+    top: 4rem;
+    max-width: 83rem; 
+    text-align: center;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    backdrop-filter: blur(-1px);
+    background: rgba(33, 30, 30, 0.23);
+    position: relative;
+    z-index: 2;
+    margin: 20px auto; 
+}
+
+thead{
+    background-color: #24113b;
+    backdrop-filter: blur(10px);
+}
+
+th, td {
+    border: 1px solid rgb(93, 7, 192);
+    padding: 15px;
+    color: white;
+    text-align: center;
+}
+
+th {
+    color: white;
+}
+
+tr:last-child td {
+    border-bottom: none;
 }

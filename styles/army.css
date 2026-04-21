@@ -1,0 +1,27 @@
+.army-content {
+    position: relative;
+    top: 6rem;
+}
+
+.army-text h2 {
+    position: relative;
+    font-family: var(--font-text);
+    font-size: 3rem;
+    left: -7rem;
+}
+
+.army-text p {
+    position: relative;
+    font-family: var(--font-text);
+    left: -7rem;
+}
+
+.vam-img {
+    position: relative;
+    top: -24rem;
+    right: -51rem;
+}
+
+.vam-img img {
+    transform: scaleX(-1);
+}
