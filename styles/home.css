@@ -12,11 +12,19 @@
     z-index: 1;
 }
 
-h1 {
+.cover-h1 {
     position: relative;
     font-size: 6em;
     top: -2rem;
     margin-bottom: 2rem;
+
+    font-family: var(--font-cover);
+    font-size: 62px;
+    font-weight: 400;
+    font-style: normal;
+    color: var(--color1);
+    text-shadow: 0 0 27px rgb(155 52 219), 0 0 8px rgb(198 94 250 / 83%);
+    letter-spacing: 0.3rem;
 }
 
 p {
@@ -58,8 +66,8 @@ p {
     left: -2rem;
     font-family: var(--font-text);
     font-weight: 600;
-    color: #AAAAAA;
-    font-size: medium;
+    color: #e7d6d6;
+    font-size: 27px;
 }
 
 .btn:hover {

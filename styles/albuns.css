@@ -19,7 +19,7 @@
     margin: auto;
     display: flex;
     flex-wrap: wrap;
-    top: 5rem;
+    top: -4rem;
     position: relative;
 }
 
@@ -215,7 +215,7 @@
 }
 
 /* ALBUNS HISTORY*/
-.history-albuns{
+.history-albuns {
     position: relative;
     margin-top: 4rem;
     text-align: center;
@@ -225,26 +225,28 @@ table {
     font-family: var(--font-text);
     border-collapse: separate;
     border-spacing: 0;
-    width: 80%;
-    top: 4rem;
-    max-width: 83rem; 
     text-align: center;
-    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
+    border-radius: 1%;
     overflow: hidden;
     backdrop-filter: blur(-1px);
     background: rgba(33, 30, 30, 0.23);
     position: relative;
     z-index: 2;
-    margin: 20px auto; 
+    margin: -26px auto;
 }
 
-thead{
-    background-color: #24113b;
-    backdrop-filter: blur(10px);
+thead {
+    font-size: 23px;
+    background-color: #24113ba5;
+    backdrop-filter: blur(-1px);
 }
 
-th, td {
+tbody {
+    font-size: 19px;
+}
+
+th,
+td {
     border: 1px solid rgb(93, 7, 192);
     padding: 15px;
     color: white;

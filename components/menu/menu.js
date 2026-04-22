@@ -11,5 +11,3 @@ fetch("/components/menu/menu.html")
         });
     });
 
-
-
