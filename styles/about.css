@@ -1,11 +1,17 @@
 /*ABOUT*/
+
+.about-p {
+    position: relative;
+    text-align: left;
+    top: -2rem;
+    z-index: 3;
+}
+
 .about-p p {
     position: relative;
     font-family: var(--font-text);
     margin-top: 0rem;
     font-size: 22px;
-    text-align: left;
-    top: 128px;
     z-index: 3;
 }
 
@@ -15,8 +21,8 @@
     list-style: none;
     margin: 3%;
     text-align: left;
-    left: -2rem;
-    top: 6rem;
+    left: -3rem;
+    top: -3rem;
 }
 
 .about-ol li::before {
@@ -29,7 +35,7 @@
     position: relative;
     display: flex;
     right: -54rem;
-    top: -18rem;
+    top: -28rem;
     width: 39rem;
     height: 23rem;
     border-radius: 2%;
@@ -51,6 +57,12 @@
     gap: 2.3rem;
 }
 
+.cards-h2 {
+    font-family: var(--font-text);
+    color: var(--color1);
+    text-shadow: 0 0 16px rgba(213, 149, 255, 0.644), 0 0 8px rgba(224, 167, 252, 0.374);
+}
+
 .about-cards {
     min-height: 550px;
     width: 83rem;
@@ -59,14 +71,14 @@
     padding: -12px 37px;
     cursor: pointer;
     display: flex;
-    max-width: 401px;
+    max-width: 366px;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
     gap: 0.5rem;
     left: -2%;
-    top: -5rem;
+    top: -15rem;
     background: #170233b3;
     border: 3px solid rgba(238, 238, 238, 0.2);
     border-radius: 1rem;
@@ -122,13 +134,16 @@
 }
 
 /*About history*/
+.about-history {
+    position: relative;
+    top: -2rem;
+}
+
 .about-history p {
     position: relative;
     font-family: var(--font-text);
     margin-top: 0rem;
-    font-size: 22px;
     text-align: left;
-    top: -3rem;
     z-index: 3;
 }
 
@@ -137,7 +152,7 @@
     padding-bottom: 28.25%;
     height: 0;
     left: 54rem;
-    top: -56rem;
+    top: -45rem;
     width: 53%;
     pointer-events: auto;
 }
@@ -206,11 +221,14 @@
 }
 
 .award-h2 {
+    font-family: var(--font-text);
     position: relative;
-    font-size: 2rem;
-    margin: 0 auto;
-    top: -4rem;
-    left: 3rem;
+    font-size: 3rem;
+    margin: -26px auto;
+    top: -3rem;
+    left: 4rem;
+    color: var(--color1) #d1beff;
+    text-shadow: 0 0 16px rgba(213, 149, 255, 0.644), 0 0 8px rgba(224, 167, 252, 0.374);
 }
 
 .award-ol,

@@ -100,6 +100,7 @@
 .timeline-content h3 {
     font-family: var(--font-text);
     font-size: 36px;
+    left: 2rem;
     color: white;
     margin: 0 0 10px;
     font-weight: 500;
@@ -217,7 +218,7 @@
 /* ALBUNS HISTORY*/
 .history-albuns {
     position: relative;
-    margin-top: 4rem;
+    margin-top: -2rem;
     text-align: center;
 }
 
@@ -233,6 +234,7 @@ table {
     position: relative;
     z-index: 2;
     margin: -26px auto;
+    top: -1rem;
 }
 
 thead {

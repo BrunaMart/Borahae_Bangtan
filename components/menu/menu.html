@@ -13,11 +13,14 @@
     <header class="header">
 
         <img class="logo" src="/assets/img/BTS-Logo.png" alt="BTS Logo" width="120">
-        <h2>Borahae Bangtan</h2>
+        <div class="stars">
+            <img class="menu-star1" src="/assets/img/star.png" alt="">
+            <img class="menu-star2" src="/assets/img/star.png" alt="">
+        </div>
+        <h3 class="header-menu">Borahae Bangtan</h3>
 
         <nav class="nav">
             <button class="hamburger"></button>
-
             <ul class="nav-list">
                 <li><a href="/Home.html">Home</a></li>
                 <li><a href="/pages/about.html">About BTS</a></li>
@@ -35,19 +38,44 @@
                         Translate
 
                     </a>
-
                     <ul class="dropdown-menu">
                         <li><a href="#">Portuguese</a></li>
                         <li><a href="#">Korean</a></li>
                     </ul>
                 </li>
-
             </ul>
         </nav>
     </header>
 
 
     <style>
+
+        .stars {
+            position: relative;
+            top: -53%;
+            left: -28rem;
+        }
+
+        .menu-star1,
+        .menu-star2 {
+            width: 3rem;
+            height: 2rem;
+            z-index: 2;
+            animation: glow 2s infinite alternate;
+        }
+
+        .menu-star1 {
+            position: relative;
+            left: -228px;
+            top: 38px;
+        }
+
+        .menu-star2 {
+            position: relative;
+            left: 228px;
+            top: 61px;
+        }
+
         header {
             overflow: visible;
             position: relative;
@@ -61,11 +89,11 @@
             padding: 11px;
         }
 
-        h2 {
+        .header-menu {
             position: relative;
             top: -53%;
-            left: -26rem;
-            font-family: var(--font-title);
+            left: -28rem;
+            font-family: var(--font-cover);
             font-size: 2rem;
             color: var(--color1);
             text-shadow: 0 0 16px rgba(213, 149, 255, 0.644), 0 0 8px rgba(224, 167, 252, 0.374);
@@ -73,25 +101,25 @@
             letter-spacing: 0.2rem;
         }
 
-        button {
+        /*button {
             font-family: var(--font-text);
             font-size: 1rem;
-            color: white;
+            color: rgb(0, 0, 0);
             font: bold;
             background: none;
             border: none;
             cursor: pointer;
-        }
+        }*/
 
         .logo {
             position: relative;
             display: flex;
-            top: 32%;
-            left: -32%;
-            width: 7%;
-            height: 88%;
+            top: 44%;
+            left: -43%;
+            width: 10%;
+            height: 64%;
             z-index: 2;
-            filter: invert(39%) sepia(99%) saturate(663%) hue-rotate(226deg);
+            filter: invert(39%) sepia(99%) saturate(663%) hue-rotate(226deg) drop-shadow(0 5px 10px rgba(88, 13, 137, 0.747)) drop-shadow(0 0 5px rgba(248, 239, 255, 0.582));
         }
 
         .nav {
@@ -101,7 +129,7 @@
             justify-content: flex-end;
             width: 76%;
             padding-right: 30px;
-
+           
         }
 
         .nav-list {
@@ -166,15 +194,16 @@
         }
 
         /* Dropdown escondido */
-        .dropdown{
+        .dropdown {
             position: absolute;
             top: -9px;
             left: 90rem;
         }
+
         .dropdown-menu {
             display: none;
             position: absolute;
-   
+
             background-color: #4507914d;
             backdrop-filter: blur(10px);
             border-radius: 1rem;

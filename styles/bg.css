@@ -1,18 +1,30 @@
 html {
-    height: 100%;
+    height: 100vh;
     margin: 0;
     padding: 0;
     overflow-x: hidden;
-    overflow-x: auto;
-    background: url("/assets/img/bg.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    background: url("/assets/img/bg.jpg") center center / cover no-repeat;
     position: relative;
-    overflow-x: hidden;
 }
 
+body {
+    margin: 0;
+    min-height: 100%;
+}
 
+.stars-blur {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -184;
+    backdrop-filter: blur(1px);
+    -webkit-backdrop-filter: blur(1px);
+    pointer-events: none;
+}
+
+/*
 html::before {
     content: '';
     position: fixed;
@@ -21,17 +33,17 @@ html::before {
     width: 100%;
     height: 100%;
     background: rgba(6, 1, 7, 0.313);
-    backdrop-filter: blur(1px);
+   
     z-index: -11;
 }
-
+*/
 .wrapper {
     position: fixed;
     top: 0;
     left: 0;
     width: 100vw;
     height: 100%;
-    z-index: -1857;
+    z-index: -1;
     pointer-events: none;
 }
 

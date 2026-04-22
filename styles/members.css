@@ -4,7 +4,7 @@
     justify-content: center;
     border-bottom: 2px solid var(--color2);
     margin-bottom: 20px;
-    margin-top: 128px;
+    margin-top: 14px;
 }
 
 .tab-button {
@@ -55,7 +55,7 @@
     margin-top: 2rem;
 }
 
-.title-content {
+.title-content{
     font-family: var(--font-title);
     font-size: 5rem;
     color: var(--color1);
@@ -99,8 +99,8 @@
 }
 
 .bt21-img img {
-    width: 50rem;
-    height: 32rem;
+    width: 43rem;
+    height: 28rem;
     transition: 0.4s ease-in-out;
 }
 
@@ -248,15 +248,16 @@
 
 .cooky-bt21 {
     position: relative;
-    top: -65rem;
+    top: -75rem;
     left: 1345px;
     z-index: 2;
 }
 
 .cooky-bt21 img {
-    width: 21rem;
-    height: 30rem;
+    width: 18rem;
+    height: 31rem;
 }
+
 
 /* V */
 .menbers-v {

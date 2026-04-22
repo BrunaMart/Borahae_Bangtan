@@ -1,16 +1,19 @@
-h1{
+h1 {
     position: relative;
     top: 2rem;
 }
+
 .army-content {
     position: relative;
-    top: 9rem;
+    top: -1rem;
     left: 7rem;
 }
 
 .army-text h2 {
     position: relative;
     font-family: var(--font-text);
+    color: var(--color1);
+    text-shadow: 0 0 16px rgb(213, 149, 255), 0 0 8px rgb(224, 167, 252);
     font-size: 3rem;
     left: -7rem;
 }
@@ -31,17 +34,32 @@ h1{
     transform: scaleX(-1);
 }
 
+.vam-about {
+    position: relative;
+    background: #1702257b;
+    color: white;
+    font-family: var(--font-text);
+    font-size: 2.0rem;
+    text-align: left;
+    left: 20rem;
+    padding: 10px;
+    border-radius: 8px;
+    width: 30rem;
+}
+
 
 /*SUGGESTIONS*/
 .suggestions-content {
     position: relative;
     left: 7rem;
-    top: 6rem;
+    top: -1rem;
 }
 
 .suggestions-content h2 {
     position: relative;
     font-family: var(--font-text);
+    color: var(--color1);
+    text-shadow: 0 0 16px rgb(213, 149, 255), 0 0 8px rgb(224, 167, 252);
     font-size: 3rem;
     left: -7rem;
 }
@@ -81,7 +99,7 @@ h1{
     width: 49rem;
     gap: 0.5rem;
     left: -11%;
-    top: 7rem;
+    top: 0rem;
     cursor: pointer;
     display: flex;
     flex-direction: column;
@@ -128,7 +146,7 @@ h1{
     position: relative;
     list-style: none;
     margin: 0%;
-    text-align: left;
+    text-align: center;
     left: -1rem;
     top: -4rem;
 }
