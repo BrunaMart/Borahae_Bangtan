@@ -55,7 +55,20 @@ h1 {
     top: -1rem;
 }
 
-.suggestions-content h2 {
+.fanchant {
+    position: relative;
+    left: 7rem;
+    top: -28rem;
+}
+
+.fanchant p {
+    position: relative;
+    left: -7rem;
+    top: 1rem;
+}
+
+.suggestions-content h2,
+.fanchant h2 {
     position: relative;
     font-family: var(--font-text);
     color: var(--color1);
@@ -64,7 +77,8 @@ h1 {
     left: -7rem;
 }
 
-.suggestions-ol {
+.suggestions-ol,
+.fanchant-ol {
     font-family: var(--font-text);
     font-size: 22px;
     position: relative;
@@ -75,7 +89,8 @@ h1 {
     top: -1rem;
 }
 
-.suggestions-ol li::before {
+.suggestions-ol li::before,
+.fanchant-ol li::before {
     content: "✦ ";
     color: var(--color1);
 }
@@ -83,6 +98,12 @@ h1 {
 .shooky-img {
     position: relative;
     top: -48rem;
+    right: -43rem;
+}
+
+.cook-img {
+    position: relative;
+    top: -37rem;
     right: -43rem;
 }
 
