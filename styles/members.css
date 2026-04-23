@@ -55,7 +55,7 @@
     margin-top: 2rem;
 }
 
-.title-content{
+.title-content {
     font-family: var(--font-title);
     font-size: 5rem;
     color: var(--color1);
@@ -111,12 +111,10 @@
 }
 
 /* MEMBERS */
-
 .members-ol {
     position: relative;
     font-family: var(--font-text);
     font-size: 22px;
-    font-size: 1.38rem;
     list-style: none;
     margin: 26%;
     text-align: left;
@@ -307,4 +305,261 @@
 .chimmy-bt21 img {
     width: 21rem;
     height: 30rem;
+}
+
+@media (max-width: 750px) {
+    .tabs {
+        position: relative;
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap: nowrap;
+        margin-bottom: 20px;
+        margin-top: 14px;
+        overflow: auto;
+    }
+
+    .tab-button {
+        position: relative;
+        padding: 0px 9px;
+        cursor: pointer;
+        border: none;
+        font-size: 21px;
+        border-bottom: 3px solid transparent;
+        transition: all 0.3s ease;
+    }
+
+    .title-content {
+        font-family: var(--font-title);
+        font-size: 4rem;
+        letter-spacing: 0.3rem;
+        text-align: center;
+        z-index: -1;
+    }
+
+    .bt21-ol {
+        font-size: 18px;
+        position: relative;
+        list-style: none;
+        margin: 3%;
+        text-align: center;
+        left: -1rem;
+        top: 1rem;
+    }
+
+    .bt21-p {
+        position: relative;
+        top: 2rem;
+
+    }
+
+    .bt21-img {
+        position: relative;
+        top: 3rem;
+        left: 0rem;
+    }
+
+    .bt21-img img {
+        width: 21rem;
+        height: 11rem;
+        transition: 0.4s ease-in-out;
+    }
+
+    .title-content {
+        position: relative;
+        font-family: var(--font-title);
+        font-size: 44px;
+        left: 0rem;
+        letter-spacing: 0.3rem;
+        text-align: center;
+    }
+
+    .members-ol {
+        position: relative;
+        font-family: var(--font-text);
+        font-size: 19px;
+        list-style: none;
+        margin: 5%;
+        text-align: center;
+        left: -1rem;
+        top: 3rem;
+        z-index: -1;
+    }
+
+    /*    RM     */
+    .menbers-img {
+        position: relative;
+        top: -6rem;
+        left: 4rem;
+    }
+
+    .menbers-img img {
+        width: 11rem;
+        height: 15rem;
+        border-radius: 11%;
+    }
+
+    .members-bt21 img {
+        width: 8rem;
+        height: 12rem;
+    }
+
+    .members-bt21 {
+        position: relative;
+        top: 8rem;
+        left: 218px;
+        transform: rotate(0deg);
+        z-index: 1;
+    }
+
+    /*    SUGA     */
+    .menbers-suga {
+        position: relative;
+        top: -9rem;
+        left: 5rem;
+    }
+
+    .menbers-suga img {
+        width: 11rem;
+        height: 15rem;
+        border-radius: 11%;
+    }
+
+    .shooky-bt21 {
+        position: relative;
+        top: 6rem;
+        left: 11rem;
+        transform: rotate(3deg);
+        z-index: 1;
+    }
+
+    .shooky-bt21 img {
+        width: 13rem;
+        height: 16rem;
+    }
+
+    /*    J-HOPE     */
+    .menbers-hopi {
+        position: relative;
+        top: -6rem;
+        left: 4rem;
+    }
+
+    .menbers-hopi img {
+        width: 12rem;
+        height: 15rem;
+        border-radius: 11%;
+    }
+
+    .mang-bt21 {
+        position: relative;
+        top: 9rem;
+        left: 213px;
+        z-index: 2;
+    }
+
+    .mang-bt21 img {
+        width: 9rem;
+        height: 13rem;
+    }
+
+    /* JIN */
+    .menbers-jin {
+        position: relative;
+        top: -6rem;
+        left: 5rem;
+    }
+
+    .menbers-jin img {
+        width: 10rem;
+        height: 14rem;
+        border-radius: 11%;
+    }
+
+    .rj-bt21 {
+        position: relative;
+        top: 5rem;
+        left: 209px;
+        z-index: 2;
+    }
+
+    .rj-bt21 img {
+        width: 9rem;
+        height: 10rem;
+    }
+
+    /*    JK    */
+    .menbers-jk {
+        position: relative;
+        top: -6rem;
+        left: 4rem;
+    }
+
+    .menbers-jk img {
+        width: 11rem;
+        height: 18rem;
+        border-radius: 11%;
+    }
+
+    .cooky-bt21 {
+        position: relative;
+        top: 5rem;
+        left: 239px;
+        z-index: 2;
+    }
+
+    .cooky-bt21 img {
+        width: 9rem;
+        height: 14rem;
+    }
+
+
+    /* V */
+    .menbers-v {
+        position: relative;
+        top: -4rem;
+        left: 3rem;
+    }
+
+    .menbers-v img {
+        width: 12rem;
+        height: 16rem;
+        border-radius: 11%;
+    }
+
+    .tata-bt21 {
+        position: relative;
+        top: 7rem;
+        left: 217px;
+        z-index: 2;
+    }
+
+    .tata-bt21 img {
+        width: 9rem;
+        height: 11rem;
+    }
+
+    /* JIMIN */
+    .menbers-jimin {
+        position: relative;
+        top: -8rem;
+        left: 6rem;
+    }
+
+    .menbers-jimin img {
+        width: 10rem;
+        height: 17rem;
+        border-radius: 11%;
+    }
+
+    .chimmy-bt21 {
+        position: relative;
+        top: 7rem;
+        left: 217px;
+        z-index: 2;
+    }
+
+    .chimmy-bt21 img {
+        width: 9rem;
+        height: 11rem;
+    }
 }
