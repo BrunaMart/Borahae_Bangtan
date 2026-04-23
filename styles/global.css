@@ -123,18 +123,65 @@ footer p {
 
 @media (max-width: 750px) {
 
-  p{
-    font-family: var(--font-text);
-    font-size: 19px;
+  .titles-h1 {
+    font-size: 4rem;
+    letter-spacing: 0.3rem;
+    top: -5rem;  
+    z-index: -1;
   }
 
+  p {
+    position: relative;
+    font-family: var(--font-text);
+    font-size: 19px;
+    text-align: center;
+     z-index: -1;
+  }
+
+  .header-menu {
+    position: relative;
+    top: -49%;
+    left: 5rem;
+    font-family: var(--font-cover);
+    font-size: 24px;
+    color: var(--color1);
+    text-shadow: 0 0 16px rgba(213, 149, 255, 0.644), 0 0 8px rgba(224, 167, 252, 0.374);
+    z-index: 1;
+    letter-spacing: 0.2rem;
+  }
+
+  .stars {
+    position: relative;
+    top: -81%;
+    left: -21rem;
+  }
+
+  .menu-star1,
+  .menu-star2 {
+    width: 3rem;
+    height: 2rem;
+    z-index: 2;
+    animation: glow 2s infinite alternate;
+  }
+
+  .menu-star1 {
+    position: relative;
+    top: 149%;
+    left: 17rem;
+  }
+
+  .menu-star2 {
+    position: relative;
+    top: 287%;
+    left: 408px;
+  }
 
   .logo {
     position: relative;
     display: flex;
-    top: 2%;
-    left: 1%;
-    width: 13%;
+    top: 82%;
+    left: -43%;
+    width: 37%;
     height: 100%;
     z-index: 2;
   }
@@ -215,7 +262,6 @@ footer p {
   }
 
   footer {
-    font-size: 10px;
     bottom: 9px;
     left: 0px;
     width: 100%;
@@ -223,5 +269,12 @@ footer p {
     justify-content: center;
     padding: 8px 6px;
     z-index: -1;
+  }
+
+  footer p {
+    font-family: var(--font-text);
+    font-size: 14px;
+    letter-spacing: 2px;
+    color: white;
   }
 }

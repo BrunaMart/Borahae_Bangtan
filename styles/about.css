@@ -1,18 +1,8 @@
 /*ABOUT*/
-
 .about-p {
     position: relative;
     text-align: left;
     top: -2rem;
-    z-index: 3;
-}
-
-.about-p p {
-    position: relative;
-    font-family: var(--font-text);
-    margin-top: 0rem;
-    font-size: 22px;
-    z-index: 3;
 }
 
 .about-ol {
@@ -29,7 +19,6 @@
     content: "✦ ";
     color: var(--color1);
 }
-
 
 .about-img img {
     position: relative;
@@ -48,7 +37,6 @@
     box-shadow: 0 15px 40px var(--color4);
 }
 
-
 /*cards about*/
 .cards {
     display: grid;
@@ -61,6 +49,9 @@
     font-family: var(--font-text);
     color: var(--color1);
     text-shadow: 0 0 16px rgba(213, 149, 255, 0.644), 0 0 8px rgba(224, 167, 252, 0.374);
+    font-size: 2rem;
+    position: relative;
+    left: 0rem;
 }
 
 .about-cards {
@@ -90,12 +81,6 @@
     border: 3px solid var(--color2);
     transform: translateY(-11px)scale(1.03);
     box-shadow: 10px 10px 50px var(--color1);
-}
-
-.cards-h2 {
-    font-size: 2rem;
-    position: relative;
-    left: 0rem;
 }
 
 .card-ol {
@@ -137,14 +122,6 @@
 .about-history {
     position: relative;
     top: -2rem;
-}
-
-.about-history p {
-    position: relative;
-    font-family: var(--font-text);
-    margin-top: 0rem;
-    text-align: left;
-    z-index: 3;
 }
 
 .video-container {
@@ -222,8 +199,8 @@
 
 .award-h2 {
     font-family: var(--font-text);
-    position: relative;
     font-size: 3rem;
+    position: relative;
     margin: -26px auto;
     top: -3rem;
     left: 4rem;
@@ -248,4 +225,137 @@
 .award2-ol li::before {
     content: "✦ ";
     color: var(--color1);
+}
+
+@media (max-width: 750px) {
+
+    .about-ol {
+        font-size: 19px;
+        position: relative;
+        list-style: none;
+        margin: 3%;
+        text-align: center;
+        left: -1rem;
+        top: 0rem;
+        z-index: -1;
+    }
+
+    .about-img img {
+        position: relative;
+        display: flex;
+        right: 1rem;
+        top: 2rem;
+        width: 19rem;
+        height: 13rem;
+    }
+
+    .cards {
+        display: grid;
+        grid-template-columns: 1fr;
+        align-items: center;
+        gap: 1.3rem;
+    }
+
+    .about-cards {
+        min-height: 453px;
+        width: 18rem;
+        position: relative;
+        margin: 41px auto;
+        padding: -12px 37px;
+        cursor: pointer;
+        display: flex;
+        max-width: 366px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        gap: 0.5rem;
+        left: -1%;
+        top: 1rem;
+    }
+
+    .about-cards svg {
+        position: relative;
+        display: flex;
+        width: 94px;
+        fill: var(--color1);
+    }
+
+    .card-ol,
+    .card2-ol {
+        font-size: 17px;
+        position: relative;
+        list-style: none;
+        left: -1rem;
+        top: -2rem;
+        margin: 0%;
+        margin-top: 3rem;
+        text-align: center;
+    }
+
+    .video-container {
+        position: relative;
+        padding-bottom: 67.25%;
+        /* height: 2px; */
+        left: -1rem;
+        top: 8rem;
+        width: 112%;
+        pointer-events: auto;
+    }
+
+    .cards-award {
+        display: grid;
+        grid-template-columns: 1fr;
+        align-items: center;
+        gap: 4.3rem;
+    }
+
+    .about-award {
+        min-height: 453px;
+        width: 18rem;
+        position: relative;
+        margin: 41px auto;
+        padding: -12px 37px;
+        cursor: pointer;
+        display: flex;
+        max-width: 366px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        left: -2%;
+        top: 6rem;
+    }
+
+    .about-award svg {
+        position: relative;
+        display: flex;
+        left: 0rem;
+        width: 94px;
+        fill: var(--color1);
+    }
+
+    .award-h2 {
+        font-family: var(--font-text);
+        font-size: 2rem;
+        position: relative;
+        margin: 13px auto;
+        top: 0rem;
+        left: 0rem;
+        color: var(--color1) #d1beff;
+        text-shadow: 0 0 16px rgba(213, 149, 255, 0.644), 0 0 8px rgba(224, 167, 252, 0.374);
+    }
+
+    .award-ol,
+    .award2-ol {
+        font-size: 17px;
+        font-family: var(--font-text);
+        position: relative;
+        list-style: none;
+        left: 0rem;
+        top: -3rem;
+        margin: 0%;
+        margin-top: 3rem;
+        text-align: center;
+    }
 }
