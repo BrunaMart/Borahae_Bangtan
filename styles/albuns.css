@@ -199,8 +199,59 @@
     }
 }
 
-@media (max-width: 750px) {
 
+
+
+/* ALBUNS HISTORY*/
+.history-albuns {
+    position: relative;
+    margin-top: -2rem;
+    text-align: center;
+}
+
+table {
+    font-family: var(--font-text);
+    border-collapse: separate;
+    border-spacing: 0;
+    text-align: center;
+    border-radius: 1%;
+    backdrop-filter: blur(-1px);
+    background: rgba(33, 30, 30, 0.23);
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    margin-top: 116px;
+    top: -1rem;
+}
+
+thead {
+    font-size: 23px;
+    background-color: #24113ba5;
+    backdrop-filter: blur(-1px);
+}
+
+tbody {
+    font-size: 19px;
+}
+
+th,
+td {
+    border: 1px solid rgb(93, 7, 192);
+    padding: 15px;
+    color: white;
+    text-align: center;
+}
+
+th {
+    color: white;
+}
+
+tr:last-child td {
+    border-bottom: none;
+}
+
+
+@media (max-width: 750px) {
     .about-ol {
         font-size: 18px;
         position: relative;
@@ -293,13 +344,15 @@
         left: auto;
     }
 
-
-    table {
+    .table-responsive {
         width: 100%;
-        display: block;
         overflow-x: auto;
-        white-space: nowrap;
-        font-size: 14px;
+        overflow-y: hidden;
+    }
+
+
+    .table-responsive table {
+        min-width: 600px;
     }
 
     thead {
@@ -312,58 +365,7 @@
 
     th,
     td {
-        padding: 10px;
+        padding: 21px;
+         text-align: left;
     }
-}
-
-
-
-
-
-/* ALBUNS HISTORY*/
-.history-albuns {
-    position: relative;
-    margin-top: -2rem;
-    text-align: center;
-}
-
-table {
-    font-family: var(--font-text);
-    border-collapse: separate;
-    border-spacing: 0;
-    text-align: center;
-    border-radius: 1%;
-    overflow: hidden;
-    backdrop-filter: blur(-1px);
-    background: rgba(33, 30, 30, 0.23);
-    position: relative;
-    z-index: 2;
-    margin: -26px auto;
-    top: -1rem;
-}
-
-thead {
-    font-size: 23px;
-    background-color: #24113ba5;
-    backdrop-filter: blur(-1px);
-}
-
-tbody {
-    font-size: 19px;
-}
-
-th,
-td {
-    border: 1px solid rgb(93, 7, 192);
-    padding: 15px;
-    color: white;
-    text-align: center;
-}
-
-th {
-    color: white;
-}
-
-tr:last-child td {
-    border-bottom: none;
 }
