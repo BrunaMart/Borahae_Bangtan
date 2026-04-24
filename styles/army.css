@@ -176,3 +176,164 @@ h1 {
     content: "✦ ";
     color: var(--color1);
 }
+
+
+@media (max-width: 750px) {
+    .army-text h2 {
+        position: relative;
+        text-align: center;
+        font-size: 39px;
+        left: -7rem;
+    }
+
+    .army-text p {
+        position: relative;
+        font-family: var(--font-text);
+        left: -9rem;
+    }
+
+    .vam-img {
+        position: relative;
+        top: 3rem;
+        right: 8rem;
+    }
+
+    .vam-img img {
+        width: 365px;
+        height: 208px;
+    }
+
+    .vam-about {
+        position: relative;
+        font-size: 28px;
+        text-align: left;
+        left: 4rem;
+        padding: 10px;
+        border-radius: 8px;
+        width: 16rem;
+    }
+
+    .vam-about p {
+        z-index: 1;
+    }
+
+    .suggestions-content h2,
+    .fanchant h2 {
+        position: relative;
+        left: -8rem;
+        text-align: center;
+        font-size: 39px;
+    }
+
+    .suggestions-ol,
+    .fanchant-ol {
+        font-size: 19px;
+        position: relative;
+        list-style: none;
+        margin: 7%;
+        text-align: left;
+        left: -8rem;
+        top: 1rem;
+    }
+
+    .fanchant {
+        position: relative;
+        left: 7rem;
+        top: -9rem;
+    }
+
+    .fanchant p {
+        position: relative;
+        left: -9rem;
+        top: 1rem;
+    }
+
+    .shooky-img {
+        position: relative;
+        top: -40rem;
+        right: 2rem;
+    }
+
+    .shooky-img img {
+        width: 309px;
+        height: 196px;
+    }
+
+    .shooky-img {
+        position: relative;
+        top: -40rem;
+        right: 2rem;
+    }
+
+    .shooky-img img {
+        width: 309px;
+        height: 196px;
+    }
+
+    .cook-img {
+        position: relative;
+        top: -14rem;
+        right: 2rem;
+    }
+
+    .cook-img img {
+        width: 309px;
+        height: 196px;
+    }
+
+    .cards-community {
+        display: grid;
+        grid-template-columns: 1fr;
+        align-items: center;
+        gap: 4.3rem;
+    }
+
+    .about-community {
+        min-height: 453px;
+        width: 18rem;
+        position: relative;
+        margin: 41px auto;
+        padding: -12px 37px;
+        cursor: pointer;
+        display: flex;
+        max-width: 366px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        left: -2%;
+        top: 6rem;
+    }
+
+    .about-community svg {
+        position: relative;
+        display: flex;
+        left: 0rem;
+        width: 94px;
+        fill: var(--color1);
+    }
+
+    .community-h2 {
+        font-family: var(--font-text);
+        font-size: 2rem;
+        position: relative;
+        margin: 13px auto;
+        top: 0rem;
+        left: 0rem;
+        color: var(--color1) #d1beff;
+        text-shadow: 0 0 16px rgba(213, 149, 255, 0.644), 0 0 8px rgba(224, 167, 252, 0.374);
+    }
+
+
+    .community-ol {
+        font-size: 17px;
+        font-family: var(--font-text);
+        position: relative;
+        list-style: none;
+        left: 0rem;
+        top: -3rem;
+        margin: 0%;
+        margin-top: 3rem;
+        text-align: center;
+    }
+}
